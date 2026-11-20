@@ -1,4 +1,4 @@
-namespace VpnClient.Domain;
+namespace DuckJump.Domain;
 
 public sealed record SubscriptionSnapshot(
     IReadOnlyList<ConnectionProfile> Profiles,

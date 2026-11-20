@@ -1,6 +1,6 @@
 using System.Text;
 
-namespace VpnClient.Subscriptions;
+namespace DuckJump.Subscriptions;
 
 internal static class Base64Text
 {

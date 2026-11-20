@@ -1,9 +1,9 @@
 using System.Collections.ObjectModel;
 using System.Globalization;
 using System.Text.Json;
-using VpnClient.Domain;
+using DuckJump.Domain;
 
-namespace VpnClient.Subscriptions;
+namespace DuckJump.Subscriptions;
 
 public static class ShareLinkParser
 {

@@ -1,6 +1,6 @@
-using VpnClient.Domain;
+using DuckJump.Domain;
 
-namespace VpnClient.Engine.Abstractions;
+namespace DuckJump.Engine.Abstractions;
 
 public interface IVpnEngine
 {

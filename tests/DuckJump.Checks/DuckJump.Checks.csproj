@@ -3,6 +3,6 @@
     <OutputType>Exe</OutputType>
   </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="../../src/VpnClient.Subscriptions/VpnClient.Subscriptions.csproj" />
+    <ProjectReference Include="../../src/DuckJump.Subscriptions/DuckJump.Subscriptions.csproj" />
   </ItemGroup>
 </Project>

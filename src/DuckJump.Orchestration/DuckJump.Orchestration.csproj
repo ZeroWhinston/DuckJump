@@ -1,0 +1,6 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="../DuckJump.Domain/DuckJump.Domain.csproj" />
+    <ProjectReference Include="../DuckJump.Engine.Abstractions/DuckJump.Engine.Abstractions.csproj" />
+  </ItemGroup>
+</Project>

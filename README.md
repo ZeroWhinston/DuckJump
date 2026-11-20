@@ -1,4 +1,4 @@
-# VPN Client
+# DuckJump
 
 Working repository for a Windows-first VPN client with a shared mobile-ready core.
 
@@ -9,8 +9,8 @@ will be integrated behind stable abstractions in later milestones.
 ## Build
 
 ```powershell
-dotnet build VpnClient.slnx
-dotnet run --project tests/VpnClient.Checks
+dotnet build DuckJump.slnx
+dotnet run --project tests/DuckJump.Checks
 ```
 
 ## Security rules

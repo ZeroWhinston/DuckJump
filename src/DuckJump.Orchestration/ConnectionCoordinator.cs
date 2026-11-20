@@ -1,7 +1,7 @@
-using VpnClient.Domain;
-using VpnClient.Engine.Abstractions;
+using DuckJump.Domain;
+using DuckJump.Engine.Abstractions;
 
-namespace VpnClient.Orchestration;
+namespace DuckJump.Orchestration;
 
 public sealed class ConnectionCoordinator
 {

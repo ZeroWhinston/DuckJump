@@ -1,6 +1,6 @@
-using VpnClient.Domain;
+using DuckJump.Domain;
 
-namespace VpnClient.Subscriptions;
+namespace DuckJump.Subscriptions;
 
 public static class SubscriptionParser
 {

@@ -1,6 +1,6 @@
 using System.Collections.ObjectModel;
 
-namespace VpnClient.Domain;
+namespace DuckJump.Domain;
 
 public sealed record ConnectionProfile
 {

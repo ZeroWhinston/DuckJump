@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/DuckJump.Domain/DuckJump.Domain.csproj" />
+    <Project Path="src/DuckJump.Engine.Abstractions/DuckJump.Engine.Abstractions.csproj" />
+    <Project Path="src/DuckJump.Orchestration/DuckJump.Orchestration.csproj" />
+    <Project Path="src/DuckJump.Subscriptions/DuckJump.Subscriptions.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/DuckJump.Checks/DuckJump.Checks.csproj" />
+  </Folder>
+</Solution>

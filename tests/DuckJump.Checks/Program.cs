@@ -1,7 +1,7 @@
 using System.Text;
 using System.Text.Json;
-using VpnClient.Domain;
-using VpnClient.Subscriptions;
+using DuckJump.Domain;
+using DuckJump.Subscriptions;
 
 var checks = new List<(string Name, Action Run)>
 {
