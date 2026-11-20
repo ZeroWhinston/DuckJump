@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Page
+    x:Class="DuckJump.App.Pages.ServersPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <ScrollViewer Background="#0A0F1C">
+        <StackPanel Padding="32,24,32,40" Spacing="20">
+            <Grid>
+                <StackPanel>
+                    <TextBlock FontSize="30" FontWeight="SemiBold" Text="Серверы" />
+                    <TextBlock Foreground="#93A4BA" Text="Выберите оптимальную точку подключения" />
+                </StackPanel>
+                <Button HorizontalAlignment="Right" Padding="16,10" Content="Проверить задержку" CornerRadius="10" />
+            </Grid>
+            <TextBox PlaceholderText="Поиск по стране или городу" />
+            <Border Padding="20" Background="#153A2A" BorderBrush="#43D17A" BorderThickness="1" CornerRadius="16">
+                <Grid ColumnSpacing="16">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <TextBlock FontSize="22" Text="NL" VerticalAlignment="Center" />
+                    <StackPanel Grid.Column="1">
+                        <TextBlock FontSize="17" FontWeight="SemiBold" Text="Amsterdam" />
+                        <TextBlock Foreground="#93A4BA" Text="VLESS Reality · Рекомендуемый" />
+                    </StackPanel>
+                    <TextBlock Grid.Column="2" Foreground="#43D17A" Text="42 мс" VerticalAlignment="Center" />
+                </Grid>
+            </Border>
+            <Border Padding="20" Background="#111827" CornerRadius="16">
+                <Grid ColumnSpacing="16">
+                    <Grid.ColumnDefinitions><ColumnDefinition Width="Auto" /><ColumnDefinition Width="*" /><ColumnDefinition Width="Auto" /></Grid.ColumnDefinitions>
+                    <TextBlock FontSize="22" Text="DE" VerticalAlignment="Center" />
+                    <StackPanel Grid.Column="1"><TextBlock FontSize="17" FontWeight="SemiBold" Text="Frankfurt" /><TextBlock Foreground="#93A4BA" Text="WireGuard" /></StackPanel>
+                    <TextBlock Grid.Column="2" Foreground="#FBBF24" Text="58 мс" VerticalAlignment="Center" />
+                </Grid>
+            </Border>
+            <Border Padding="20" Background="#111827" CornerRadius="16">
+                <Grid ColumnSpacing="16">
+                    <Grid.ColumnDefinitions><ColumnDefinition Width="Auto" /><ColumnDefinition Width="*" /><ColumnDefinition Width="Auto" /></Grid.ColumnDefinitions>
+                    <TextBlock FontSize="22" Text="FI" VerticalAlignment="Center" />
+                    <StackPanel Grid.Column="1"><TextBlock FontSize="17" FontWeight="SemiBold" Text="Helsinki" /><TextBlock Foreground="#93A4BA" Text="OpenVPN · TCP" /></StackPanel>
+                    <TextBlock Grid.Column="2" Foreground="#FBBF24" Text="71 мс" VerticalAlignment="Center" />
+                </Grid>
+            </Border>
+        </StackPanel>
+    </ScrollViewer>
+</Page>

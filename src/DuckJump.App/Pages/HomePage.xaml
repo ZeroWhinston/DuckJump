@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Page
+    x:Class="DuckJump.App.Pages.HomePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="using:DuckJump.App.Pages"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <ScrollViewer Background="#0A0F1C">
+        <StackPanel Padding="32,24,32,40" Spacing="22">
+            <StackPanel Spacing="4">
+                <TextBlock
+                    FontSize="30"
+                    FontWeight="SemiBold"
+                    Text="Добро пожаловать в DuckJump" />
+                <TextBlock
+                    Foreground="#93A4BA"
+                    Text="Приватность без лишних настроек" />
+            </StackPanel>
+
+            <Border
+                Padding="32"
+                CornerRadius="28">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                        <GradientStop Offset="0" Color="#172554" />
+                        <GradientStop Offset="0.55" Color="#123A4A" />
+                        <GradientStop Offset="1" Color="#064E3B" />
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Grid ColumnSpacing="28">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+
+                    <StackPanel VerticalAlignment="Center" Spacing="12">
+                        <Border
+                            x:Name="ConnectionBadge"
+                            HorizontalAlignment="Left"
+                            Padding="12,6"
+                            Background="#28FFFFFF"
+                            CornerRadius="14">
+                            <StackPanel Orientation="Horizontal" Spacing="8">
+                                <Ellipse
+                                    x:Name="StatusDot"
+                                    Width="8"
+                                    Height="8"
+                                    Fill="#FBBF24" />
+                                <TextBlock
+                                    x:Name="StatusBadgeText"
+                                    FontSize="12"
+                                    FontWeight="SemiBold"
+                                    Text="НЕ ПОДКЛЮЧЕНО" />
+                            </StackPanel>
+                        </Border>
+                        <TextBlock
+                            x:Name="StatusTitle"
+                            FontSize="32"
+                            FontWeight="SemiBold"
+                            Text="Соединение не защищено"
+                            TextWrapping="Wrap" />
+                        <TextBlock
+                            x:Name="StatusSubtitle"
+                            MaxWidth="520"
+                            Foreground="#C7D2E3"
+                            Text="Выберите сервер и включите защищённый туннель. DuckJump автоматически применит DNS-защиту и kill switch."
+                            TextWrapping="Wrap" />
+                        <Button
+                            x:Name="ConnectButton"
+                            MinWidth="210"
+                            Margin="0,8,0,0"
+                            Padding="24,14"
+                            HorizontalAlignment="Left"
+                            Background="#43D17A"
+                            Click="ConnectButton_Click"
+                            CornerRadius="12"
+                            Foreground="#07150D">
+                            <StackPanel Orientation="Horizontal" Spacing="10">
+                                <FontIcon Glyph="&#xE72E;" />
+                                <TextBlock
+                                    x:Name="ConnectButtonText"
+                                    FontWeight="SemiBold"
+                                    Text="Подключиться" />
+                            </StackPanel>
+                        </Button>
+                    </StackPanel>
+
+                    <Border
+                        Grid.Column="1"
+                        Width="190"
+                        Height="190"
+                        Background="#18FFFFFF"
+                        CornerRadius="95">
+                        <Grid>
+                            <Border
+                                Width="136"
+                                Height="136"
+                                Background="#16FFFFFF"
+                                CornerRadius="68" />
+                            <FontIcon
+                                FontSize="72"
+                                Foreground="#76F0A5"
+                                Glyph="&#xE83D;" />
+                        </Grid>
+                    </Border>
+                </Grid>
+            </Border>
+
+            <InfoBar
+                x:Name="ConnectionInfoBar"
+                IsClosable="True"
+                IsOpen="False"
+                Severity="Success"
+                Title="Демонстрационный режим"
+                Message="Интерфейс работает; подключение к VPN-движку будет добавлено на следующем этапе." />
+
+            <Grid ColumnSpacing="16">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <Border Padding="22" Background="#111827" CornerRadius="18">
+                    <StackPanel Spacing="12">
+                        <TextBlock Foreground="#93A4BA" Text="Выбранный сервер" />
+                        <StackPanel Orientation="Horizontal" Spacing="14">
+                            <Border
+                                Width="44"
+                                Height="44"
+                                Background="#1E3A5F"
+                                CornerRadius="12">
+                                <TextBlock
+                                    HorizontalAlignment="Center"
+                                    VerticalAlignment="Center"
+                                    FontSize="20"
+                                    Text="NL" />
+                            </Border>
+                            <StackPanel>
+                                <TextBlock FontSize="17" FontWeight="SemiBold" Text="Amsterdam" />
+                                <TextBlock Foreground="#93A4BA" Text="Нидерланды · VLESS Reality" />
+                            </StackPanel>
+                        </StackPanel>
+                    </StackPanel>
+                </Border>
+
+                <Border Grid.Column="1" Padding="22" Background="#111827" CornerRadius="18">
+                    <StackPanel Spacing="10">
+                        <FontIcon HorizontalAlignment="Left" Foreground="#38BDF8" Glyph="&#xE9D9;" />
+                        <TextBlock Foreground="#93A4BA" Text="Задержка" />
+                        <TextBlock FontSize="24" FontWeight="SemiBold" Text="42 мс" />
+                    </StackPanel>
+                </Border>
+
+                <Border Grid.Column="2" Padding="22" Background="#111827" CornerRadius="18">
+                    <StackPanel Spacing="10">
+                        <FontIcon HorizontalAlignment="Left" Foreground="#A78BFA" Glyph="&#xE950;" />
+                        <TextBlock Foreground="#93A4BA" Text="Новый IP" />
+                        <TextBlock FontSize="18" FontWeight="SemiBold" Text="—" />
+                    </StackPanel>
+                </Border>
+            </Grid>
+
+            <Border Padding="22" Background="#111827" CornerRadius="18">
+                <Grid ColumnSpacing="16">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <Border
+                        Width="48"
+                        Height="48"
+                        Background="#173A2A"
+                        CornerRadius="14">
+                        <FontIcon Foreground="#43D17A" Glyph="&#xE73E;" />
+                    </Border>
+                    <StackPanel Grid.Column="1" VerticalAlignment="Center">
+                        <TextBlock FontWeight="SemiBold" Text="Kill switch готов" />
+                        <TextBlock Foreground="#93A4BA" Text="Заблокирует трафик при неожиданном разрыве туннеля" />
+                    </StackPanel>
+                    <ToggleSwitch Grid.Column="2" VerticalAlignment="Center" IsOn="True" />
+                </Grid>
+            </Border>
+        </StackPanel>
+    </ScrollViewer>
+</Page>

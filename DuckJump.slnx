@@ -1,5 +1,6 @@
 <Solution>
   <Folder Name="/src/">
+    <Project Path="src/DuckJump.App/DuckJump.App.csproj" />
     <Project Path="src/DuckJump.Domain/DuckJump.Domain.csproj" />
     <Project Path="src/DuckJump.Engine.Abstractions/DuckJump.Engine.Abstractions.csproj" />
     <Project Path="src/DuckJump.Orchestration/DuckJump.Orchestration.csproj" />

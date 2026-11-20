@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Page
+    x:Class="DuckJump.App.Pages.SubscriptionsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <ScrollViewer Background="#0A0F1C">
+        <StackPanel Padding="32,24,32,40" Spacing="20">
+            <StackPanel>
+                <TextBlock FontSize="30" FontWeight="SemiBold" Text="Подписки" />
+                <TextBlock Foreground="#93A4BA" Text="Добавляйте одну ссылку или URL со списком подключений" />
+            </StackPanel>
+            <Border Padding="24" Background="#111827" CornerRadius="18">
+                <StackPanel Spacing="14">
+                    <TextBlock FontSize="18" FontWeight="SemiBold" Text="Новая подписка" />
+                    <TextBox Header="Ссылка" PlaceholderText="https://server.example/sub/client-id" />
+                    <Button HorizontalAlignment="Left" Padding="18,10" Background="#43D17A" Content="Добавить" CornerRadius="10" Foreground="#07150D" />
+                </StackPanel>
+            </Border>
+            <Border Padding="22" Background="#111827" CornerRadius="18">
+                <Grid ColumnSpacing="16">
+                    <Grid.ColumnDefinitions><ColumnDefinition Width="Auto" /><ColumnDefinition Width="*" /><ColumnDefinition Width="Auto" /></Grid.ColumnDefinitions>
+                    <Border Width="46" Height="46" Background="#1E3A5F" CornerRadius="13"><FontIcon Foreground="#38BDF8" Glyph="&#xE8F7;" /></Border>
+                    <StackPanel Grid.Column="1"><TextBlock FontWeight="SemiBold" Text="Основная подписка" /><TextBlock Foreground="#93A4BA" Text="5 подключений · обновлено только что" /></StackPanel>
+                    <Button Grid.Column="2" Content="Обновить" VerticalAlignment="Center" />
+                </Grid>
+            </Border>
+            <InfoBar IsOpen="True" IsClosable="False" Severity="Informational" Title="Безопасное хранение" Message="Ссылки подписок считаются секретами и будут храниться через Windows DPAPI." />
+        </StackPanel>
+    </ScrollViewer>
+</Page>

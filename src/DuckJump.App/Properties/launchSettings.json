@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "DuckJump.App (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "DuckJump.App (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
