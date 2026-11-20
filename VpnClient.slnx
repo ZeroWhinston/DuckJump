@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/VpnClient.Domain/VpnClient.Domain.csproj" />
+    <Project Path="src/VpnClient.Engine.Abstractions/VpnClient.Engine.Abstractions.csproj" />
+    <Project Path="src/VpnClient.Orchestration/VpnClient.Orchestration.csproj" />
+    <Project Path="src/VpnClient.Subscriptions/VpnClient.Subscriptions.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/VpnClient.Checks/VpnClient.Checks.csproj" />
+  </Folder>
+</Solution>

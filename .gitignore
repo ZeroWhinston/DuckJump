@@ -1,0 +1,13 @@
+bin/
+obj/
+.vs/
+.idea/
+.dotnet-cli/
+*.user
+*.suo
+*.pfx
+*.snk
+*.log
+artifacts/
+runtimes/
+local.settings.json

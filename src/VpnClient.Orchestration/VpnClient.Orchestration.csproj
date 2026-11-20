@@ -1,0 +1,6 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="../VpnClient.Domain/VpnClient.Domain.csproj" />
+    <ProjectReference Include="../VpnClient.Engine.Abstractions/VpnClient.Engine.Abstractions.csproj" />
+  </ItemGroup>
+</Project>
